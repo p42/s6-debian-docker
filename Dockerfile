@@ -1,5 +1,5 @@
 FROM debian:9
-MAINTAINER Jordan Clark jordan.clark@esu10.org
+MAINTAINER Jordan Clark mail@jordanclark.us
 
 ARG S6_OVERLAY_VERSION=1.20.0.0
 ARG S6_OVERLAY_MD5HASH=86f62d1c3c7958fe244b4a864977bae8
@@ -8,6 +8,7 @@ COPY container-files /
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y wget && \
+    apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     cd /tmp && \
     wget https://github.com/just-containers/s6-overlay/releases/download/v$S6_OVERLAY_VERSION/s6-overlay-amd64.tar.gz && \
