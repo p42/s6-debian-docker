@@ -1,8 +1,8 @@
-FROM debian:9
+FROM debian:stable-backports
 MAINTAINER Jordan Clark mail@jordanclark.us
 
-ARG S6_OVERLAY_VERSION=1.21.4.0
-ARG S6_OVERLAY_MD5HASH=3eb36dc6524522d8c637106ce74ded18
+ARG S6_OVERLAY_VERSION=2.1.0.2
+ARG S6_OVERLAY_MD5HASH=7e81e28fcb4d882d2fbc6c7f671758e2
 
 COPY container-files /
 

@@ -19,6 +19,7 @@ The [s6-overlay project](https://github.com/just-containers/s6-overlay) is a ser
 | latest | The most current build.  Images based on latest may change often an possibly could break.  Test your images |
 | 9 | Latest Debian 9 series |
 | 9.5 | Debian Linux 9.5 built on 2018-07-30 |
+| 2.1.0.2 | Debian 10.6 with S6 Overlay v2.1.0.2 built on 2020-12-02 |
 | 1.21.4.0 | Debian 9.5 with S6 Overlay v1.21.4.0 built on 2018-07-30 |
 | 1.20.0.0 | Debian 9.1 with S6 Overlay v1.20.0.0 built on 2017-09-26 |
 
